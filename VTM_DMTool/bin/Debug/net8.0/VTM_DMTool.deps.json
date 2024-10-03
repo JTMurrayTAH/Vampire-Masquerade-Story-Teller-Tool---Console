@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "VTM_DMTool/1.0.0": {
+        "runtime": {
+          "VTM_DMTool.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VTM_DMTool/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

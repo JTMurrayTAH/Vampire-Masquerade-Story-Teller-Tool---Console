@@ -1,0 +1,14 @@
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\bin\Debug\net8.0\VTM_DMTool.exe
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\bin\Debug\net8.0\VTM_DMTool.deps.json
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\bin\Debug\net8.0\VTM_DMTool.runtimeconfig.json
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\bin\Debug\net8.0\VTM_DMTool.dll
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\bin\Debug\net8.0\VTM_DMTool.pdb
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\VTM_DMTool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\VTM_DMTool.AssemblyInfoInputs.cache
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\VTM_DMTool.AssemblyInfo.cs
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\VTM_DMTool.csproj.CoreCompileInputs.cache
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\VTM_DMTool.dll
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\refint\VTM_DMTool.dll
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\VTM_DMTool.pdb
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\VTM_DMTool.genruntimeconfig.cache
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\ref\VTM_DMTool.dll

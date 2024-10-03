@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VTM_DMTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a483c06edfc764be50ce26fc3f823b4a5f73ee8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("VTM_DMTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VTM_DMTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

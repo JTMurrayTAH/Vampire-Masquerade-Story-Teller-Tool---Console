@@ -13,18 +13,21 @@ namespace VTM_DMTool.Dice
 
         int NumOfDice; //Total Dice
         int NumOfHunger; // Hunger Dice
+        int DiffC; //Difficulty Check
 
         List<int>? Results; // Results for regular Dice
         List<int>? HResults; // Results for hunger Dice
 
         Random Roller = new Random();
 
-        public void RollDice(int NumOfDie, int NumOfHungerDie)
+        public void RollDice(int NumOfDie, int NumOfHungerDie, int DC)
         {
             NumOfDice = NumOfDie;
             NumOfHunger = NumOfHungerDie;
+            DiffC = DC;
             Console.WriteLine($"You want to roll : {NumOfDice} ");
             Console.WriteLine($"You want to roll Hunger die : {NumOfHungerDie} ");
+            Console.WriteLine($"The difficulty is: {DC}");
             Console.ReadLine();
             RollRegularDie();
             RollHunger();
@@ -142,20 +145,67 @@ namespace VTM_DMTool.Dice
             }
 
             // Handle outcomes
+            Console.WriteLine($"The Difficulty was: {DiffC}");
+            Console.WriteLine();
             Console.WriteLine($"Number of successes: {success}");
             Console.WriteLine($"Number of failures: {failures}");
+            Console.WriteLine();
             Console.WriteLine($"Number of half crits: {halfCrits}");
             Console.WriteLine($"Number of full crits: {fullCrits}");
 
-            if (hungerCrits > 0)
+            Console.WriteLine(); Console.WriteLine();
+            if (success >= DiffC)
             {
-                Console.WriteLine("You rolled a critical on a hunger die!");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("You have succeeded the check!");
+                Console.ForegroundColor = ConsoleColor.White;
+                
+                if (beastialFailure)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                   Console.WriteLine("Beastial Failure! You rolled a 1 on a hunger die.");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    
+                    return;
+                }
+                if (hungerCrits > 0)
+                {
+                    Console.WriteLine("You rolled a critical on a hunger die!");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("You win but have obvious vampiric influence!");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    
+                    return;
+                }
             }
+            else 
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("You have failed the check!");
+                Console.ForegroundColor = ConsoleColor.White;
 
-            if (beastialFailure)
-            {
-                Console.WriteLine("Beastial Failure! You rolled a 1 on a hunger die.");
+                if (beastialFailure)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Beastial Failure! You rolled a 1 on a hunger die.");
+                    Console.ForegroundColor = ConsoleColor.White;
+
+                    return;
+                }
+                if (hungerCrits > 0)
+                {
+                    Console.WriteLine("You rolled a critical on a hunger die!");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("You lose and have obvious vampiric influence!");
+                    Console.ForegroundColor = ConsoleColor.White;
+
+                    return;
+                }
+
             }
+            
+
+            
 
             Console.ReadLine();
         }

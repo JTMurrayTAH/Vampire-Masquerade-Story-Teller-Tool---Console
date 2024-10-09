@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using VTM_DMTool.DataBase;
 using VTM_Generator;
 
 namespace VTM_DMTool.Dice
@@ -11,6 +13,7 @@ namespace VTM_DMTool.Dice
     {   
         DiceRoller diceRoller = new DiceRoller();
         CharacterCreator QCharCrea = new CharacterCreator();
+        CharDataBase charDataBase = new CharDataBase();
         public Menu()
         {
             Console.ReadLine();
@@ -31,9 +34,10 @@ namespace VTM_DMTool.Dice
             }
             if (input == 1) { DiceRollerStart(); }
             if (input == 2) { QCharacterMaker(); }
-            if (input == 3) { }
+            if (input == 3) { StartCharDataBase(); }
         }
 
+        //Quick Character 
         void QCharacterMaker()
         {
             int input;
@@ -81,6 +85,7 @@ namespace VTM_DMTool.Dice
             }
         }
 
+        //Dice Roller
         void DiceCheckRestart()
         {
             string input;
@@ -147,8 +152,72 @@ namespace VTM_DMTool.Dice
             DiceCheckRestart();
             }
 
+        void StartCharDataBase()
+        {
+            charDataBase.GenerateANewChar();
 
+            RestartCharData();
 
         }
+        void RestartCharData()
+        {
+            string input;
+            Console.WriteLine("Do you want this character added to the data base?");
+            Console.WriteLine($"It will be the {charDataBase.Chars.Count + 1} number of character in the database");
+
+            //Yes No.
+            Console.WriteLine("Y = Yes, N = No");
+            input = Console.ReadLine();
+
+            // Default to "Y" if input is empty, or convert input to uppercase for comparison
+            if (string.IsNullOrEmpty(input))
+            {
+                input = "Y"; // Default to "Y" if no input
+            }
+            else
+            {
+                input = input.ToUpper(); // Normalize input to uppercase for easier comparison
+            }
+            // Check the input
+            if (input == "Y")
+            {
+                Console.WriteLine("You selected Yes.");
+                charDataBase.AddCharacter();
+                charDataBase.GenerateANewChar();
+            }
+            else if (input == "N")
+            {
+                Console.WriteLine("You selected No.");
+                
+
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Defaulting to Yes.");
+                
+            }
+        }
+
+        void CharBaseMenu()
+        {
+            Console.Clear();
+            int input;
+            Console.WriteLine("Char Data Base");
+            Console.WriteLine("1. Create a character");
+            Console.WriteLine("2. Search Character Number");
+            Console.WriteLine("3. Go back to Menu.");
+
+            while (!int.TryParse(Console.ReadLine(), out input) || input < 0 || input > 4)
+            {
+                Console.WriteLine("Invalid input:");
+            }
+            if (input == 1) { StartCharDataBase(); RestartCharData(); }
+            if (input == 2) { QCharacterMaker(); }
+            if (input == 3) { StartCharDataBase(); }
+        }
+        
+        
+
+    }
     }
 

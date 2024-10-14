@@ -385,9 +385,36 @@ namespace VTM_Generator
 
             if (IsVampire)
             {
-                string[] VampFirstNameArray = new string[] { "Dracula", "Lucifier" };
-                string[] VampLastNameArray = new string[] { "Colins", "Antigo" };
-                string[] VampTitlesArray = new string[] { "Title 1", "Title 2" };
+                string[] VampFirstNameArray = new string[] { "Adrian", "Alaric", "Alexandra", "Amelia", "Anastasia", "Anton", "Aria", "Ash", "Astrid", "Avery", "Beatrix", "Briar", "Caleb", "Callista", 
+                    "Cassius", "Celeste", "Dante", "Darius", "Delilah", "Dominic", "Eleanor", "Elara", "Elijah", "Emilia", "Evander", "Felix", "Freya", "Gideon", "Hazel", "Helena", "Hugo", "Iris", 
+                    "Isabella", "Jasper", "Julian", "Katarina", "Killian", "Leon", "Lilith", "Lorenzo", "Lydia", "Magnus", "Malcolm", "Marceline", "Matthias", "Mirella", "Nathaniel", "Nico", "Octavia", 
+                    "Ophelia", "Orion", "Penelope", "Percival", "Quentin", "Raven", "Reina", "Ren", "Rowan", "Salem", "Sasha", "Sebastian", "Seraphina", "Silas", "Soren", "Stella", "Sylvia", "Tatiana", 
+                    "Theodore", "Thorne", "Tristan", "Uriah", "Valentina", "Victor", "Violet", "Vivian", "Wesley", "Wilhelmina", "Wren", "Xander", "Yara", "Yvonne", "Zachariah", "Zara", "Zephyr", "Aisling", 
+                    "Anwen", "Azrael", "Balthazar", "Bellamy", "Blaise", "Coraline", "Desdemona", "Evangeline", "Lucien", "Oberon", "Selene", "Thalia", "Verity", "Wolfgang", "Zane" };
+
+                string[] VampLastNameArray = new string[] { "Archer", "Ashford", "Axton", "Baines", "Bennett", "Blackwood", "Blake", "Blanchard", "Boucher", "Byrne", "Calder", "Carver", "Castell", "Chambers", 
+                    "Crawford", "Cross", "Darcy", "Delacroix", "Donovan", "Doyle", "Draper", "Duval", "Eldridge", "Everly", "Faulkner", "Fletcher", "Frost", "Galloway", "Garnet", "Graves", "Grey", "Hale", "Hart", 
+                    "Hawthorne", "Hendrix", "Holloway", "Hunt", "Ingram", "Jasper", "Kane", "Kavanagh", "Kincaid", "Lancaster", "Langley", "Locke", "Lynch", "Mallory", "March", "Margrave", "Monroe", "Morgan", 
+                    "Moriarty", "Nightingale", "North", "Osborne", "Payne", "Pryor", "Quincy", "Ravenwood", "Redgrave", "Reed", "Remington", "Roth", "Rowe", "Sinclair", "Stanton", "Sterling", "Stroud", "Sutton", 
+                    "Talbot", "Thorne", "Thornton", "Travers", "Valentine", "Vance", "Voss", "Ward", "Wells", "Whitmore", "Wilde", "Winchester", "Wolfe", "Woodrow", "Worthington", "York", "Yates", "Ainsley", 
+                    "Beaumont", "Carmichael", "Cavanaugh", "Fairchild", "Kingsley", "Langston", "Montgomery", "Pembroke", "Radcliffe", "Selby", "Tremont", "Vanderbilt", "Wyndham", "Yardley", "Zephyr" };
+
+                string[] VampTitlesArray = new string[] { 
+                //Carmillia
+                "Prince", "Primogen", "Seneschal", "Keeper of Elysium", "Harpy", "Sheriff", "Scourge", "Justicar", "Archon", "Regent", "Whip", "Ancilla", "Elder", "Neonate", "Chamberlain", "Master of Harpies", 
+                    "Warden", "Chancellor", "Lord", "Dame",
+                    //Anarchist
+                    "Baron", "Emissary", "Enforcer", "Speaker", "Warlord", "Outlaw", "Iconoclast", "Firebrand", "Revolutionary", "Protector", "Councilor", "Provocateur", "Liaison", "Renegade", "Nomad", "Mediator", 
+                    "Defender", "Agitator", "Rebel", "Vanguard",
+                    //Sabbat
+                    "Archbishop", "Cardinal", "Priscus", "Ductus", "Templar", "Paladin", "Inquisitor", "Seraph", "Bishop", "Abbot", "Crusader", "War Priest", "Monomancer", "Confessor", "Flesh Sculptor", "Judge", 
+                    "Ravager", "Lore Keeper", "Blood Apostle", "Herald",
+                    //clanless
+                    "Shade", "Fang", "Raven", "Wraith", "Ghost", "Grim", "Bloodhound", "Jackal", "Shadowblade", "Nightstalker", "Rogue", "Viper", "Whisper", "Wolf", "Scar", "Revenant", "Bones", "Hollow", "Blaze", 
+                    "Echo", "Vermin", "Crow", "Harbinger", "Slayer", "Murmur", "Phantom", "Valkyrie", "Frost", "Hunter", "Ash", "Dusk", "Specter", "Gloom", "Hellhound", "Banshee", "Stalker", "Fury", "Bite", "Serpent", 
+                    "Void", "Shadewalker", "Nomad", "Silhouette", "Rascal", "Ruin", "Dagger", "Sable", "Abyss", "Midnight", "Reckoner"
+
+                };
 
                 FirstName = VampFirstNameArray[new Random().Next(0, VampFirstNameArray.Length)];
                 LastName = VampLastNameArray[new Random().Next(0, VampLastNameArray.Length)];
@@ -395,7 +422,13 @@ namespace VTM_Generator
 
                 if (hasMiddleName == true)
                 {
-                    string[] VampMiddleNameArray = new string[] { "Colins", "Antigo" };
+                    string[] VampMiddleNameArray = new string[] { "Alice", "Arthur", "August", "Belle", "Blair", "Cael", "Cassandra", "Cassian", "Celine", "Cyrus", "Dahlia", "Damon", "Dorian", "Edith", "Edwin", 
+                        "Elias", "Elise", "Ember", "Emil", "Estelle", "Faye", "Florence", "Galen", "Genevieve", "Giselle", "Grant", "Gwen", "Heath", "Heloise", "Ignatius", "Isidore", "James", "Jane", "Jude", 
+                        "Kalliope", "Laurence", "Leander", "Lenore", "Luca", "Maeve", "Marcus", "Marian", "Maxwell", "Nadia", "Naomi", "Nathaniel", "Niamh", "Noelle", "Odette", "Orson", "Paige", "Pearl", 
+                        "Peregrine", "Renee", "Rex", "Rose", "Rowena", "Sable", "Samson", "Selena", "Severin", "Shea", "Solomon", "Sullivan", "Sybil", "Tamsin", "Tate", "Thea", "Tristan", "Ulysses", "Una", 
+                        "Vera", "Verne", "Viola", "Walter", "Winifred", "Xavier", "Yvonne", "Zachary", "Zenobia", "Alaric", "Aurora", "Bran", "Caius", "Dara", "Emrys", "Fenris", "Gideon", "Isolde", "Lysander", 
+                        "Mordecai", "Orion", "Phaedra", "Seren", "Theron", "Valeria", "Wilhelm", "Zara" };
+
                     MiddleName = VampMiddleNameArray[new Random().Next(0, VampMiddleNameArray.Length)];
                     FullName = FirstName + " " + MiddleName + " " + LastName;
                 }
@@ -413,9 +446,35 @@ namespace VTM_Generator
             //Human
             else
             {
-                string[] HumFirstNameArray = new string[] { "Dracula", "Lucifier" };
-                string[] HumLastNameArray = new string[] { "Colins", "Antigo" };
-                string[] HumTitlesArray = new string[] { "Title 1", "Title 2" };
+                string[] HumFirstNameArray = new string[] { "Oliver", "Emma", "Liam", "Ava", "Noah", "Sophia", "James", "Isabella", "Ethan", "Mia", "Benjamin", "Charlotte", "Lucas", "Amelia", "Henry", "Harper", 
+                    "Alexander", "Evelyn", "William", "Abigail", "Samuel", "Ella", "Jack", "Scarlett", "Daniel", "Grace", "Sebastian", "Lily", "David", "Chloe", "Matthew", "Zoe", "Andrew", "Aria", "Joseph", 
+                    "Aurora", "Christopher", "Savannah", "Thomas", "Hannah", "Anthony", "Stella", "Charles", "Violet", "Jonathan", "Ellie", "Nathan", "Hazel", "Gabriel", "Lucy", "Ryan", "Sophie", "Isaac", 
+                    "Madeline", "Joshua", "Ruby", "Christian", "Alice", "Adam", "Eleanor", "Dylan", "Eva", "Aaron", "Layla", "Leo", "Willow", "Caleb", "Clara", "Owen", "Ivy", "Lucas", "Isla", "Miles", "Paisley", 
+                    "Connor", "Emilia", "Evan", "Natalie", "Adrian", "Julia", "Mason", "Luna", "Ryder", "Sadie", "Brandon", "Piper", "Colin", "Jade", "Kyle", "Aurora", "Jason", "Serena", "Marcus", "Elena", 
+                    "Justin", "Maya", "Hunter", "Faith", "Jared", "Morgan", "Bryce", "Rose" };
+
+                string[] HumLastNameArray = new string[] { "Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Wilson", 
+                    "Anderson", "Thomas", "Taylor", "Moore", "Jackson", "Martin", "Lee", "Perez", "Thompson", "White", "Harris", "Sanchez", "Clark", "Ramirez", "Lewis", "Robinson", "Walker", "Young", "Allen", 
+                    "King", "Wright", "Scott", "Torres", "Nguyen", "Hill", "Flores", "Green", "Adams", "Nelson", "Baker", "Hall", "Rivera", "Campbell", "Mitchell", "Carter", "Roberts", "Gomez", "Phillips", 
+                    "Evans", "Turner", "Diaz", "Parker", "Edwards", "Collins", "Stewart", "Sanchez", "Morris", "Rogers", "Reed", "Cook", "Morgan", "Bell", "Murphy", "Bailey", "Rivera", "Cooper", "Richardson", 
+                    "Cox", "Howard", "Ward", "Torres", "Peterson", "Gray", "Ramirez", "James", "Watson", "Brooks", "Kelly", "Sanders", "Price", "Bennett", "Wood", "Barnes", "Ross", "Henderson", "Coleman", 
+                    "Jenkins", "Perry", "Powell", "Long" };
+
+                string[] HumTitlesArray = new string[] { 
+                    //Non Occult
+                    "Red", "Buddy", "Ace", "Smokey", "Duke", "Sunny", "Skipper", "Raven", "Sparky", "Tater", "Champ", "Blue", "Rocky", "Gizmo", "Bear", "Dash", "Flash", 
+                    "Tank", "Slim", "Bubba", "Pepper", "Roxie", "Jax", "Doodle", "Penny", "Noodle", "Shorty", "Maverick", "Cuddles", "Chewy", "Squeaky", "Cookie", "Gadget", "Whiskers", "Twinkle", "Rusty", 
+                    "Pookie", "Fuzzy", "Sandy", "Spike", "Munchkin", "Biscuit", "Jellybean", "Pumpkin", "Sassy", "Binky", "Daisy", "Ziggy", "Nugget", "Buddy", "Chipper", "Scooter", "Bubbles", "Honey", 
+                    "Peanut", "Munchie", "Sugar", "Twix", "Socks", "Sprout", "Gummy", "Teddy", "Pipsqueak", "Waffles", "Zippy", "Sparrow", "Snickers", "Doodles", "Chili", "Twitch", "Cheddar", "Dash", 
+                    "Snickerdoodle", "Snickerdoodle", "Bambi", "Muffin", "Scooch", "Flick", "Fawn", "Sizzle", "Dusty", "Flip", "Choco", "Snooze", "Skittles", "Coco", "Nibbles", "Squirt", "Gidget", "Bunny", 
+                    "Toffee", "Chipper", "Jasmine", "Wiggles",
+                    //Occult
+                    "Hex", "Wraith", "Shade", "Raven", "Mystic", "Grim", "Specter", "Luna", "Rune", "Haven", "Witchy", "Gloom", "Oracle", "Nightshade", "Fate", "Chant", "Cinder", "Psyche", "Nocturne", "Fable", 
+                    "Veil", "Silhouette", "Eclipse", "Ember", "Ritual", "Frost", "Sorcerer", "Phantom", "Coven", "Banshee", "Fable", "Kismet", "Dusk", "Jinx", "Wraith", "Wendigo", "Soul", "Spirit", "Ash", 
+                    "Ritualist", "Wisp", "Sable", "Twilight", "Charmed", "Nimbus", "Necro", "Myst", "Shade", "Hecate", "Oracle", "Cauldron", "Shiver", "Oracle", "Gloom", "Rook", "Poe", "Obsidian", "Hollow", 
+                    "Silence", "Charmed", "Witchlight", "Willow", "Runeweaver", "Zephyr", "Crypt", "Murmur", "Maven", "Spellbound", "Mystwalker", "Gloomweaver", "Thorn", "Witchfinder", "Phaedra", "Nox", "Abyss", 
+                    "Briar", "Revenant", "Darkling", "Riven", "Hollow", "Demon", "Briar", "Gossamer", "Nightfall", "Fleeting", "Corvid", "Veil", "Serpent", "Cinder", "Echo"
+                };
 
                 FirstName = HumFirstNameArray[new Random().Next(0, HumFirstNameArray.Length)];
                 LastName = HumLastNameArray[new Random().Next(0, HumLastNameArray.Length)];
@@ -423,7 +482,12 @@ namespace VTM_Generator
 
                 if (hasMiddleName == true)
                 {
-                    string[] HumMiddleNameArray = new string[] { "Colins", "Antigo" };
+                    string[] HumMiddleNameArray = new string[] { "James", "Marie", "Elizabeth", "Ann", "Joseph", "Grace", "Michael", "Rose", "William", "Louise", "Lee", "Alyssa", "David", "Nicole", "John", 
+                        "Mae", "Christopher", "Lynn", "Anne", "Scott", "Jade", "Matthew", "Diane", "Paul", "Renee", "Thomas", "Jean", "Edward", "Samantha", "Benjamin", "Faith", "Patrick", "Kay", "Anthony", 
+                        "Dawn", "Charles", "Nina", "Alexander", "Hope", "Henry", "Iris", "Samuel", "Chloe", "Daniel", "Sophie", "Andrew", "Faye", "Evelyn", "Liam", "Victoria", "Gabriel", "Ella", "Isaac", 
+                        "Brielle", "Luke", "Catherine", "Owen", "Ruth", "Jonathan", "Isabelle", "Michael", "Hazel", "Ryan", "Autumn", "Adrian", "Paige", "Jasper", "Brooke", "Derek", "Elena", "Henry", "Ivy", 
+                        "Matthew", "Skye", "Julian", "Wren", "Nicholas", "Tessa", "Grant", "Sienna", "Elijah", "Claire", "Marcus", "Delilah", "Vincent", "Giselle", "Aidan", "Serenity", "Leo", "Marilyn", 
+                        "Nathan", "Daphne", "Sebastian", "Joy", "Eric", "Miriam", "Colton", "Blythe" };
                     MiddleName = HumMiddleNameArray[new Random().Next(0, HumMiddleNameArray.Length)];
                     FullName = FirstName + " " + MiddleName + " " + LastName;
                 }

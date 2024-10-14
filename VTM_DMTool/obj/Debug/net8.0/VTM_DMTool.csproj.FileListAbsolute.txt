@@ -12,3 +12,4 @@ C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMToo
 C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\VTM_DMTool.pdb
 C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\VTM_DMTool.genruntimeconfig.cache
 C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\ref\VTM_DMTool.dll
+C:\Users\Josep\Documents\Development\GitHubReposts\Idle\VTM\VTMDMTools\VTM_DMTool\obj\Debug\net8.0\VTM_DMTool.sourcelink.json

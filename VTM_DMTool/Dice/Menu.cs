@@ -26,15 +26,15 @@ namespace VTM_DMTool.Dice
             Console.WriteLine("Welcome to Vampire the Masquerade DM Tools:");
             Console.WriteLine("1: Dice Roller");
             Console.WriteLine("2: Quick Character Creator");
-            Console.WriteLine("3: Character creator and database");
+            //Console.WriteLine("3: Character creator and database");
 
-            while (!int.TryParse(Console.ReadLine(), out input) || input < 0 || input > 4)
+            while (!int.TryParse(Console.ReadLine(), out input) || input < 0 || input > 3)
             {
-                Console.WriteLine("Invalid input. Please enter a positive number for HUNGER dice:");
+                Console.WriteLine("Invalid input. Please enter a valid value:");
             }
             if (input == 1) { DiceRollerStart(); }
             if (input == 2) { QCharacterMaker(); }
-            if (input == 3) { StartCharDataBase(); }
+            //if (input == 3) { StartCharDataBase(); }
         }
 
         //Quick Character 
@@ -194,7 +194,8 @@ namespace VTM_DMTool.Dice
             else
             {
                 Console.WriteLine("Invalid input. Defaulting to Yes.");
-                
+                charDataBase.AddCharacter();
+                charDataBase.GenerateANewChar();
             }
         }
 
